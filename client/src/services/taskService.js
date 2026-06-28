@@ -1,6 +1,8 @@
 import axios from "axios";
 
-const API_URL = "https://mern-task-tracker-bsdg.onrender.com";
+// const API_URL = "https://mern-task-tracker-bsdg.onrender.com";
+const API_URL = "https://mern-task-tracker-bsdg.onrender.com/tasks";
+
 // Create Task
 export const createTask = async (taskData) => {
     const response = await axios.post(API_URL, taskData);
